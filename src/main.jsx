@@ -123,7 +123,7 @@ const projects = [
     number: '01',
     type: 'SOFTWARE · MARKETING',
     title: 'Telling business customer stories for Ford Pro',
-    description: 'A full-stack publishing platform for marketing and engagement purposes. Used by countless customers.',
+    description: 'An enterprise publishing platform built to streamline content creation, management, and distribution, supporting customer engagement across Ford Pro’s digital ecosystem.'
     tags: ['TypeScript', 'React', 'NodeJS', "Google Cloud Platform", "Tekton", "Terraform"]
   },
   {
@@ -155,7 +155,7 @@ function App() {
       <FluidField />
       <div className="site-shell">
         <header className="topbar">
-          <a className="wordmark" href="#top"><span className="mark">✳</span> CG<span className="wordmark-dot">.</span></a>
+          <a className="wordmark" href="#top"><span className="mark">☼</span> CG<span className="wordmark-dot">.</span></a>
           <nav>
             <a href="#work">Work</a>
             <a href="#about">About</a>
