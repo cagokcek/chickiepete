@@ -123,7 +123,7 @@ const projects = [
     number: '01',
     type: 'SOFTWARE · MARKETING',
     title: 'Telling business customer stories for Ford Pro',
-    description: 'An enterprise publishing platform built to streamline content creation, management, and distribution, supporting customer engagement across Ford Pro’s digital ecosystem.'
+    description: 'An enterprise publishing platform built to streamline content creation, management, and distribution, supporting customer engagement across Ford Pro’s digital ecosystem.',
     tags: ['TypeScript', 'React', 'NodeJS', "Google Cloud Platform", "Tekton", "Terraform"]
   },
   {
