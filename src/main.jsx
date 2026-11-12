@@ -182,7 +182,7 @@ function App() {
           <section className="section work-section" id="work">
             <div className="section-heading">
               <div><p className="eyebrow">01 / SELECTED WORK</p><h2>Things I’ve been<br /><span className="muted">working on.</span></h2></div>
-              <p className="section-aside">A few directions I’ve explored.<br />Some shipped, some still evolving.</p>
+              <p className="section-aside">Some problems I've helped to solve.<br /></p>
             </div>
             <div className="project-list">
               {projects.map((project) => (
@@ -213,7 +213,7 @@ function App() {
                 <p>I've got a soft spot for 90s Sierra games.</p>
               </div>
               <div className="interest-grid">
-                <span>01 <b>Building software that feels natural</b></span><span>02 <b>Failing fast and recovering swiftly</b></span><span>03 <b>Motorcycles & machines</b></span><span>04 <b>Adventure Games, Natural UIs, UKG</b></span>
+                <span>01 <b>Building software that feels natural</b></span><span>02 <b>Failing fast and recovering swiftly</b></span><span>03 <b>Motorcycles & machines</b></span><span>04 <b>Adventure Games, Intuitive UIs, UKG</b></span>
               </div>
             </div>
           </section>
