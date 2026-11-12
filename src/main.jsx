@@ -123,28 +123,31 @@ const projects = [
     number: '01',
     type: 'SOFTWARE · MARKETING',
     title: 'Telling business customer stories for Ford Pro',
-    description: 'An enterprise publishing platform built to streamline content creation, management, and distribution, supporting customer engagement across Ford Pro’s digital ecosystem.',
+    description: ['An enterprise publishing platform built to streamline content creation, management, and distribution, supporting customer engagement across Ford Pro’s digital ecosystem.',
+    'A critical publishing platform used by marketing teams to create, manage, and distribute customer-facing content.',
+    'Built features across the application stack, including authentication, database integration, and user interface.'],
     tags: ['TypeScript', 'React', 'NodeJS', "Google Cloud Platform", "Tekton", "Terraform"]
   },
   {
     number: '02',
     type: 'HARDWARE · NETWORKING · PRIVACY',
     title: 'A better way to communicate in the here and now',
-    description: 'A solution for realtime local network communication with associated US patent US11102021B2.',
+    description: ['A solution for realtime local network communication with associated US patent US11102021B2.'],
     tags: ['PYTHON', 'C++', 'UDP']
   },
   {
-    number: '01',
+    number: '03',
     type: 'SOFTWARE · MARKETING · RETAIL',
     title: 'Intuitive retail inventory and cashflow solution',
-    description: 'A cashflow and inventory solution that eliminates headaches and pain points, and increases productivity by orders of magnitude. My custom solution replaces a hacky antiquated Microsoft Excel based CMS with a modern interface and database.',
+    description: ['A cashflow and inventory solution that eliminates headaches and pain points, and increases productivity by orders of magnitude.',
+      'My custom solution replaces a hacky antiquated Microsoft Excel based CMS with a modern interface and database.'],
     tags: ['TypeScript', 'React', 'NodeJS', "Supabase"]
   },
   {
-    number: '03',
+    number: '04',
     type: 'VR · AR · XR',
     title: 'Expanding human-computer interaction',
-    description: 'Multiple innovations in ways that humans can interact with computers, specifically in the field of manufacturing',
+    description: ['Multiple innovations in ways that humans can interact with computers, specifically in the field of manufacturing'],
     tags: ['UNITY', 'UNREAL', 'OPENVR', 'OPENXR', 'ARKIT', 'ARCORE']
   }
 ];
@@ -201,7 +204,11 @@ function App() {
                   <div className="project-main">
                     <p className="project-type mono">{project.type}</p>
                     <h3>{project.title}</h3>
-                    <p className="project-description">{project.description}</p>
+                    <ul className="project-description">
+                      {project.description.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
                     <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
                   </div>
                   <span className="project-arrow"><ArrowUpRight size={20} /></span>

@@ -58,7 +58,7 @@ h1{font-size:clamp(54px,7.2vw,100px);line-height:.99;letter-spacing:-.075em;font
 .project-number{padding-top:4px;color:#68717c}.project-type{color:#65d5c3;margin-bottom:12px}
 .project h3{font-size:clamp(21px,2.5vw,30px);letter-spacing:-.05em;font-weight:500;margin-bottom:12px}
 .project-description{font-size:12px;line-height:1.8;color:#9ca2aa;max-width:600px;margin-bottom:17px}
-.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{border:1px solid rgba(255,255,255,.13);border-radius:30px;padding:6px 10px;color:#aeb3ba;font:9px 'DM Mono'}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:2em;}.tags span{border:1px solid rgba(255,255,255,.13);border-radius:30px;padding:6px 10px;color:#aeb3ba;font:9px 'DM Mono'}
 .project-arrow{color:#65d5c3;justify-self:end;padding-top:3px}
 .about-section{display:grid;grid-template-columns:.6fr 1.4fr;gap:50px;border-top:1px solid rgba(255,255,255,.13)}
 .about-kicker>span{display:block;margin-top:75px;color:#68717c}
@@ -120,6 +120,34 @@ h1{font-size:clamp(54px,7.2vw,100px);line-height:.99;letter-spacing:-.075em;font
   }
 }
 
+
+.project-description {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-description li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.project-description li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
 
 .resume-section{padding-top:25px}
 .resume-card{border:1px solid rgba(255,255,255,.15);background:rgba(17,21,29,.68);backdrop-filter:blur(12px);padding:45px;display:flex;align-items:center;justify-content:space-between;position:relative;gap:20px}
