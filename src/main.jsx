@@ -168,7 +168,7 @@ function App() {
           <section className="hero">
             <motion.div className="hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease: [.2,.7,.2,1] }}>
               <p className="eyebrow"><span className="eyebrow-line" /> SOFTWARE ENGINEERING · SYSTEMS · EXPERIMENTS</p>
-              <h1>Making useful things<br /><span className="muted">work beautifully.</span></h1>
+              <h1>Can Gokcek<br /><span className="muted">work beautifully.</span></h1>
               <p className="hero-description">I like building software that connects the dots between people, systems, and the physical world. I’m drawn to practical problems, thoughtful interfaces, and figuring out how things actually work.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
