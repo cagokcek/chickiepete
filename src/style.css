@@ -32,7 +32,23 @@ h1{font-size:clamp(54px,7.2vw,100px);line-height:.99;letter-spacing:-.075em;font
 .side-note{align-self:flex-end;margin-right:7%;border-left:1px solid #65d5c3;padding-left:15px}.side-note p{font-size:12px;line-height:1.7;color:#c2c5c8;margin:9px 0 0}
 .hero-index{position:absolute;bottom:34px;left:0}.hero-index span{color:#65d5c3;margin:0 9px}
 .ticker{overflow:hidden;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:18px 0}
-.ticker-track{display:flex;align-items:center;justify-content:space-between;gap:35px;white-space:nowrap;font:10px 'DM Mono';letter-spacing:.16em;color:#9ca2aa}.ticker i{font-style:normal;color:#65d5c3;font-size:14px}
+.ticker-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 12px 32px;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .section{padding:125px 0}
 .section-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:55px}
 .section-heading h2,.about-content h2,.contact-section h2{font-size:clamp(42px,5.5vw,70px);line-height:1.04;letter-spacing:-.07em;font-weight:600;margin:22px 0 0}

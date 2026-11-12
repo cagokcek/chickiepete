@@ -124,7 +124,7 @@ const projects = [
     type: 'SOFTWARE · MARKETING',
     title: 'Telling business customer stories for Ford Pro',
     description: 'A full-stack publishing platform for marketing and engagement purposes. Used by countless customers.',
-    tags: ['TypeScript', 'React', 'NodeJS', "Tekton", "Terraform"]
+    tags: ['TypeScript', 'React', 'NodeJS', "Google Cloud Platform", "Tekton", "Terraform"]
   },
   {
     number: '02',
@@ -137,15 +137,15 @@ const projects = [
     number: '01',
     type: 'SOFTWARE · MARKETING · RETAIL',
     title: 'Intuitive retail inventory and cashflow solution',
-    description: 'A cashflow and inventory solution that elimanates headaches and pain points, and increases productivity by orders of magnitude',
-    tags: ['TypeScript', 'React', 'NodeJS', "Supabase", "Google Cloud Platform"]
+    description: 'A cashflow and inventory solution that eliminates headaches and pain points, and increases productivity by orders of magnitude. My custom solution replaces a hacky antiquated Microsoft Excel based CMS with a modern interface and database.',
+    tags: ['TypeScript', 'React', 'NodeJS', "Supabase"]
   },
   {
     number: '03',
     type: 'VR · AR · XR',
     title: 'Expanding human-computer interaction',
     description: 'Multiple innovations in ways that humans can interact with computers, specifically in the field of manufacturing',
-    tags: ['UNITY', 'UNREAL']
+    tags: ['UNITY', 'UNREAL', 'OPENVR', 'OPENXR', 'ARKIT', 'ARCORE']
   }
 ];
 
@@ -169,7 +169,6 @@ function App() {
             <motion.div className="hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease: [.2,.7,.2,1] }}>
               <p className="eyebrow"><span className="eyebrow-line" /> SOFTWARE ENGINEERING · SYSTEMS · LEADERSHIP</p>
               <h1>Can Gokcek<br /><span className="muted">~hack the planet~</span></h1>
-              <p className="hero-description">Engineering is a beautiful artform.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
                 <a className="text-link" href="#about">A little about me <MoveUpRight size={15} /></a>
@@ -183,7 +182,7 @@ function App() {
           </section>
 
           <section className="ticker" aria-label="Areas of interest">
-            <div className="ticker-track"><span>REACT</span><i>✳</i><span>NODEJS</span><i>✳</i><span>TYPESCRIPT</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>AWS</span><i>✳</i><span>GCP</span><i>✳</i><span>REDIS</span><i>✳</i><span>TEKTON</span><i>✳</i><i>✳</i><span>TERRAFORM</span><i>✳</i><i>✳</i><span>NEXTJS</span><i>✳</i><i>✳</i><span>UNITY</span><i>✳</i><i>✳</i><span>UNREAL</span><i>✳</i><i>✳</i><span>PYTHON</span><i>✳</i><i>✳</i><span>JAVA</span><i>✳</i><i>✳</i><span>C#</span><i>✳</i><i>✳</i><span>C++</span><i>✳</i><i>✳</i><span>MYSQL</span><i>✳</i><i>✳</i><span>MOTORCYCLES</span><i>✳</i><i>✳</i><span>CIRCUITS</span><i>✳</i><i>✳</i><span>SEMICONDUCTORS</span><i>✳</i></div>
+            <div className="ticker-track"><span>REACT</span><i>✳</i><span>NODEJS</span><i>✳</i><span>TYPESCRIPT</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>AWS</span><i>✳</i><span>GCP</span><i>✳</i><span>REDIS</span><i>✳</i><span>TEKTON</span><i>✳</i><span>TERRAFORM</span><i>✳</i><span>NEXTJS</span><i>✳</i><span>UNITY</span><i>✳</i><span>UNREAL</span><i>✳</i><span>PYTHON</span><i>✳</i><span>JAVA</span><i>✳</i><span>C#</span><i>✳</i><span>C++</span><i>✳</i><span>MYSQL</span><i>✳</i><span>MOTORCYCLES</span><i>✳</i><span>CIRCUITS</span><i>✳</i><span>SEMICONDUCTORS</span><i>✳</i></div>
           </section>
 
           <section className="section work-section" id="work">
@@ -212,10 +211,11 @@ function App() {
             <div className="about-content">
               <h2>Constantly Innovating<br /><span className="muted"></span></h2>
               <div className="about-columns">
-                <p>I've been wrangling computers since I was about 6 years old.</p>
+                <p>I have a decade of experience in enterprise software engineering, from PLCs to Augmented Reality; from Manufacturing to full-stack web development.</p>
+                <p>I have been a team leader for several years in large enterprise settings. I am well-versed in pair programming, onboarding, project management, and roadmapping.</p>
                 <p>WebAssembly is a dream come true.</p>
-                <p>I sometimes miss the old turbo button on a 486.</p>
-                <p>I have a decade of experience in enterprise software engineering, from PLCs to Augmented Reality; from Manufacturing to full-stack development.</p>
+                <p>I've been wrangling computers since I was about 6 years old, starting with QBasic.</p>
+                <p>I sometimes miss the turbo button on a 486.</p>
                 <p>I love solving problems, whether it is software, hardware, or mechanical.</p>
                 <p>I've got a soft spot for 90s Sierra games.</p>
               </div>
