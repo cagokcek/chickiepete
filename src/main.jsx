@@ -121,31 +121,24 @@ function FluidField() {
 const projects = [
   {
     number: '01',
-    type: 'DATA · COMMERCE',
-    title: 'Sales intelligence, without the noise.',
-    description: 'A focused reporting layer connecting Shopify data to a lightweight dashboard, with daily sales breakdowns and custom business logic.',
-    tags: ['TypeScript', 'Supabase', 'Shopify API']
+    type: 'SOFTWARE · MARKETING',
+    title: 'Telling business customer stories for Ford Pro',
+    description: 'A full-stack publishing platform for marketing and engagement purposes. Used by countless customers.',
+    tags: ['TypeScript', 'React', 'NodeJS', "Tekton", "Terraform"]
   },
   {
     number: '02',
-    type: 'LOCAL CONTROL · HARDWARE',
-    title: 'A better interface for the things around us.',
-    description: 'A local-first browser interface for controlling Sengled devices through a Python command-line tool—fast controls, no cloud dependency in the UI.',
-    tags: ['React', 'Python', 'UDP']
+    type: 'HARDWARE · NETWORKING · PRIVACY',
+    title: 'A better way to communicate in the here and now',
+    description: 'A solution for realtime local network communication with associated US patent US11102021B2.',
+    tags: ['PYTHON', 'C++', 'UDP']
   },
   {
     number: '03',
-    type: 'TOOLS · AUTOMATION',
-    title: 'Small tools that remove friction.',
-    description: 'A barcode and label workflow built around generated SVGs, keyboard-wedge scanners, QR codes, and reliable thermal printing.',
-    tags: ['React', 'SVG', 'Printing']
-  },
-  {
-    number: '04',
-    type: 'REALTIME · GAME DEVELOPMENT',
-    title: 'Turning runtime worlds into authored worlds.',
-    description: 'Exploring ways to capture dynamically generated Unity scenes and turn runtime state into editable, persistent scene assets.',
-    tags: ['Unity', 'C#', 'Editor tooling']
+    type: 'VR · AR · XR',
+    title: 'Expanding human-computer interaction',
+    description: 'Multiple innovations in ways that humans can interact with computers, specifically in the field of manufacturing',
+    tags: ['UNITY', 'UNREAL']
   }
 ];
 
@@ -161,29 +154,29 @@ function App() {
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
           </nav>
-          <a className="availability" href="mailto:hello@example.com"><span /> Open to interesting work</a>
+          <a className="availability" href="mailto:cagokcek@gmail.com"><span /> Open to interesting work</a>
         </header>
 
         <main id="top">
           <section className="hero">
             <motion.div className="hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease: [.2,.7,.2,1] }}>
               <p className="eyebrow"><span className="eyebrow-line" /> SOFTWARE ENGINEERING · SYSTEMS · EXPERIMENTS</p>
-              <h1>Can Gokcek<br /><span className="muted">work beautifully.</span></h1>
-              <p className="hero-description">I like building software that connects the dots between people, systems, and the physical world. I’m drawn to practical problems, thoughtful interfaces, and figuring out how things actually work.</p>
+              <h1>Can Gokcek<br /><span className="muted">~hack the planet~</span></h1>
+              <p className="hero-description">Engineering is a beautiful artform.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
                 <a className="text-link" href="#about">A little about me <MoveUpRight size={15} /></a>
               </div>
             </motion.div>
             <motion.div className="hero-side" initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .25, duration: .8 }}>
-              <div className="orb-wrap"><div className="orb"><div className="orb-core" /></div><span className="orb-label">INTERACTIVE FIELD / 001</span></div>
-              <div className="side-note"><span className="mono">CURRENTLY</span><p>Building, breaking,<br />and learning by doing.</p></div>
+              <div className="orb-wrap"><div className="orb"><div className="orb-core" /></div><span className="orb-label">Weird Shape / 001</span></div>
+              <div className="side-note"><span className="mono">CURRENTLY</span><p>Cleaning a carburetor<br />and loving the mechanical feeling.</p></div>
             </motion.div>
             <div className="hero-index mono">PHILADELPHIA, PA <span>—</span> 2026</div>
           </section>
 
           <section className="ticker" aria-label="Areas of interest">
-            <div className="ticker-track"><span>SOFTWARE</span><i>✳</i><span>SYSTEMS THINKING</span><i>✳</i><span>INTERFACES</span><i>✳</i><span>HARDWARE</span><i>✳</i><span>SOFTWARE</span><i>✳</i><span>SYSTEMS THINKING</span><i>✳</i><span>INTERFACES</span><i>✳</i><span>HARDWARE</span><i>✳</i></div>
+            <div className="ticker-track"><span>REACT</span><i>✳</i><span>NODEJS</span><i>✳</i><span>TYPESCRIPT</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>AWS</span><i>✳</i><span>GCP</span><i>✳</i><span>REDIS</span><i>✳</i><span>TEKTON</span><i>✳</i><i>✳</i><span>TERRAFORM</span><i>✳</i><i>✳</i><span>NEXTJS</span><i>✳</i><i>✳</i><span>UNITY</span><i>✳</i><i>✳</i><span>UNREAL</span><i>✳</i><i>✳</i><span>PYTHON</span><i>✳</i><i>✳</i><span>JAVA</span><i>✳</i><i>✳</i><span>C#</span><i>✳</i><i>✳</i><span>C++</span><i>✳</i><i>✳</i><span>MYSQL</span><i>✳</i><i>✳</i><span>MOTORCYCLES</span><i>✳</i><i>✳</i><span>CIRCUITS</span><i>✳</i><i>✳</i><span>SEMICONDUCTORS</span><i>✳</i></div>
           </section>
 
           <section className="section work-section" id="work">
@@ -210,40 +203,43 @@ function App() {
           <section className="about-section section" id="about">
             <div className="about-kicker"><p className="eyebrow">02 / A LITTLE ABOUT ME</p><span className="mono">THE SHORT VERSION</span></div>
             <div className="about-content">
-              <h2>Curious by default.<br /><span className="muted">Practical by design.</span></h2>
+              <h2>Constantly Innovating<br /><span className="muted"></span></h2>
               <div className="about-columns">
-                <p>I’m interested in the space where software meets the real world: business systems, hardware, automation, creative tools, and the messy details that make products useful.</p>
-                <p>I learn by building. I enjoy taking something opaque, understanding the moving parts, and making it simpler to use. Outside the editor, I’m usually curious about machines, music, games, and how things are put together.</p>
+                <p>I've been wrangling computers since I was about 6 years old.</p>
+                <p>WebAssembly is a dream come true.</p>
+                <p>I sometimes miss the old turbo button on a 486.</p>
+                <p>I have a decade of experience in enterprise software engineering, from PLCs to Augmented Reality; from Manufacturing to full-stack development.</p>
+                <p>I love solving problems, whether it is software, hardware, or mechanical.</p>
+                <p>I've got a soft spot for 90s Sierra games.</p>
               </div>
               <div className="interest-grid">
-                <span>01 <b>Building useful software</b></span><span>02 <b>Reverse-engineering systems</b></span><span>03 <b>Motorcycles & machines</b></span><span>04 <b>Games, music & design</b></span>
+                <span>01 <b>Building software that feels natural</b></span><span>02 <b>Failing fast and recovering swiftly</b></span><span>03 <b>Motorcycles & machines</b></span><span>04 <b>Adventure Games, Natural UIs, UKG</b></span>
               </div>
             </div>
           </section>
 
           <section className="resume-section section" id="resume">
             <div className="resume-card">
-              <div><p className="eyebrow">03 / THE PROFESSIONAL VERSION</p><h2>Want the details?</h2><p className="resume-copy">Experience, skills, and the full story—neatly packaged.</p></div>
+              <div><p className="eyebrow">03 / WHAT IVE DONE</p><h2>Curriculum Vitae</h2><p className="resume-copy">From there to here and onward.</p></div>
               <a className="button button-primary" href="/resume.pdf" target="_blank" rel="noreferrer"><Download size={17} /> Download resume <ArrowUpRight size={16} /></a>
               <span className="resume-stamp mono">PDF / 2026</span>
             </div>
-            <p className="resume-hint">Add your PDF as <code>public/resume.pdf</code> to activate the download link.</p>
           </section>
 
           <section className="contact-section section">
             <p className="eyebrow">04 / SAY HELLO</p>
-            <h2>Have something<br /><span className="muted">interesting in mind?</span></h2>
-            <a className="contact-link" href="mailto:hello@example.com">hello@example.com <ArrowUpRight size={22} /></a>
+            <h2>Let's<br /><span className="muted">collaborate</span></h2>
+            <a className="contact-link" href="mailto:cagokcek@gmail.com">cagokcek@gmail.com <ArrowUpRight size={22} /></a>
           </section>
         </main>
 
         <footer className="footer">
           <a className="wordmark" href="#top"><span className="mark">✳</span> CG<span className="wordmark-dot">.</span></a>
-          <span className="mono">BUILT WITH CURIOSITY · © 2026</span>
+          <span className="mono">MADE WITH ❤️ IN PHILADELPHIA · (ɔ) 0x7EA</span>
           <div className="socials">
-            <a href="https://github.com/" aria-label="GitHub"><Github size={17} /></a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><Linkedin size={17} /></a>
-            <a href="mailto:hello@example.com" aria-label="Email"><Mail size={17} /></a>
+            <a href="https://github.com/cagokcek" aria-label="GitHub"><Github size={17} /></a>
+            <a href="https://www.linkedin.com/in/gokcekca" aria-label="LinkedIn"><Linkedin size={17} /></a>
+            <a href="mailto:cagokcek@gmail.com" aria-label="Email"><Mail size={17} /></a>
           </div>
         </footer>
       </div>
