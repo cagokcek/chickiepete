@@ -134,6 +134,13 @@ const projects = [
     tags: ['PYTHON', 'C++', 'UDP']
   },
   {
+    number: '01',
+    type: 'SOFTWARE · MARKETING · RETAIL',
+    title: 'Intuitive retail inventory and cashflow solution',
+    description: 'A cashflow and inventory solution that elimanates headaches and pain points, and increases productivity by orders of magnitude',
+    tags: ['TypeScript', 'React', 'NodeJS', "Supabase", "Google Cloud Platform"]
+  },
+  {
     number: '03',
     type: 'VR · AR · XR',
     title: 'Expanding human-computer interaction',
@@ -160,7 +167,7 @@ function App() {
         <main id="top">
           <section className="hero">
             <motion.div className="hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease: [.2,.7,.2,1] }}>
-              <p className="eyebrow"><span className="eyebrow-line" /> SOFTWARE ENGINEERING · SYSTEMS · EXPERIMENTS</p>
+              <p className="eyebrow"><span className="eyebrow-line" /> SOFTWARE ENGINEERING · SYSTEMS · LEADERSHIP</p>
               <h1>Can Gokcek<br /><span className="muted">~hack the planet~</span></h1>
               <p className="hero-description">Engineering is a beautiful artform.</p>
               <div className="hero-actions">
