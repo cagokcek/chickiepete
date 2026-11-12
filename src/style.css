@@ -67,6 +67,22 @@ h1{font-size:clamp(54px,7.2vw,100px);line-height:.99;letter-spacing:-.075em;font
 .about-columns p{font-size:12px;line-height:2;color:#a5aab1}
 .interest-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 35px;margin-top:30px;border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
 .interest-grid span{font:9px 'DM Mono';color:#65d5c3}.interest-grid b{font:11px 'Manrope';font-weight:500;color:#d3d5d6;margin-left:12px}
+.mobile-side-note {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .hero-side .side-note {
+    display: none;
+  }
+
+  .mobile-side-note {
+    display: block;
+    margin: 35px 0 0;
+    width: fit-content;
+    align-self: flex-start;
+  }
+}
 .resume-section{padding-top:25px}
 .resume-card{border:1px solid rgba(255,255,255,.15);background:rgba(17,21,29,.68);backdrop-filter:blur(12px);padding:45px;display:flex;align-items:center;justify-content:space-between;position:relative;gap:20px}
 .resume-card h2{font-size:38px;letter-spacing:-.06em;margin:18px 0 8px}.resume-copy{font-size:11px;color:#9da3ac;margin:0}

@@ -173,6 +173,10 @@ function App() {
                 <a className="button button-primary" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
                 <a className="text-link" href="#about">A little about me <MoveUpRight size={15} /></a>
               </div>
+            <div className="side-note mobile-side-note">
+              <span className="mono">CURRENTLY</span>
+              <p>Cleaning a carburetor<br />and loving the mechanical feeling.</p>
+            </div>
             </motion.div>
             <motion.div className="hero-side" initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .25, duration: .8 }}>
               <div className="orb-wrap"><div className="orb"><div className="orb-core" /></div><span className="orb-label">Weird Shape / 001</span></div>
